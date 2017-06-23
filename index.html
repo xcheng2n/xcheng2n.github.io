@@ -3,7 +3,7 @@
 <head>
 <meta charset=" utf-8">
 <meta name="author" content="http://www.softwhy.com/" />
-<title>搜索框关键字智能匹配实例代码</title>
+<title>小城故事多</title>
 <style>
 body, ul, li 
 {
@@ -93,8 +93,8 @@ body
 <body>
 <div class="gover_search">
  <div class="gover_search_form clearfix"> 
- <span class="search_t">关键词匹配搜索</span>
- <input type="text" class="input_search_key" id="gover_search_key" placeholder="请输入关键词直接搜索" />
+ <span class="search_t">远程员工</span>
+ <input type="text" class="input_search_key" id="gover_search_key" placeholder="请输入员工姓名" />
  <button type="submit" class="search_btn">搜索</button>
  <div class="search_suggest" id="gov_search_suggest">
   <ul>
@@ -210,14 +210,9 @@ var searchSuggest = new oSearchSuggest(sendKeyWordToBack);
 //参数为一个字符串，是搜索输入框中当前的内容 
 function sendKeyWordToBack(keyword){ 
  var aData = []; 
- aData.push('<span class="num_right">约100个</span>'+keyword+'返回数据1'); 
- aData.push('<span class="num_right">约200个</span>'+keyword+'返回数据2'); 
- aData.push('<span class="num_right">约100个</span>'+keyword+'返回数据3'); 
- aData.push('<span class="num_right">约50000个</span>'+keyword+'返回数据4'); 
- aData.push('<span class="num_right">约1044个</span>'+keyword+'2012是真的'); 
- aData.push('<span class="num_right">约100个</span>'+keyword+'2012是假的'); 
- aData.push('<span class="num_right">约100个</span>'+keyword+'2012是真的'); 
- aData.push('<span class="num_right">约100个</span>'+keyword+'2012是假的'); 
+ aData.push('<span class="num_right">约250个</span>'+keyword+'是傻逼'); 
+ aData.push('<span class="num_right">约250个</span>'+keyword+'是2逼'); 
+ aData.push('<span class="num_right">约250个</span>'+keyword+'是s逼'); 
  //将返回的数据传递给实现搜索输入框的输入提示js类 
  searchSuggest.dataDisplay(aData); 
 } 
