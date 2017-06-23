@@ -210,9 +210,15 @@ var searchSuggest = new oSearchSuggest(sendKeyWordToBack);
 //参数为一个字符串，是搜索输入框中当前的内容 
 function sendKeyWordToBack(keyword){ 
  var aData = []; 
+ if("王城"==keyword){
+ aData.push('<span class="num_right">约250个</span>'+keyword+'是帅哥'); 
+ aData.push('<span class="num_right">约250个</span>'+keyword+'是帅哥哥'); 
+ aData.push('<span class="num_right">约250个</span>'+keyword+'是帅哥哥哥'); 
+ }else{
  aData.push('<span class="num_right">约250个</span>'+keyword+'是傻逼'); 
  aData.push('<span class="num_right">约250个</span>'+keyword+'是2逼'); 
  aData.push('<span class="num_right">约250个</span>'+keyword+'是s逼'); 
+ }
  //将返回的数据传递给实现搜索输入框的输入提示js类 
  searchSuggest.dataDisplay(aData); 
 } 
